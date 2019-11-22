@@ -1,0 +1,2 @@
+# wejudge3-balloon_machine
+使用javafx开发，wejudge3的气球机。实时监控比赛评测情况并调用小票机打印

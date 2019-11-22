@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="660.0" maxWidth="1066.0" minHeight="660.0" minWidth="1066.0" prefHeight="660.0" prefWidth="1066.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="net.wejudge.controller.LoginController">
+   <children>
+      <Button fx:id="confirm" layoutX="872.0" layoutY="558.0" mnemonicParsing="false" onAction="#confirm_conn" prefHeight="27.0" prefWidth="111.0" text="确认" />
+      <Button fx:id="test_conn" layoutX="735.0" layoutY="558.0" mnemonicParsing="false" onAction="#testConnection" prefHeight="27.0" prefWidth="111.0" text="测试连接" />
+      <TextField fx:id="contest_id" layoutX="287.0" layoutY="460.0" promptText="比赛id" />
+      <TextField fx:id="access_token" layoutX="612.0" layoutY="460.0" promptText="access token" />
+      <ImageView fitHeight="148.0" fitWidth="622.0" layoutX="222.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/logo.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="234.0" layoutY="346.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WeJudge3.0比赛服气球机" wrappingWidth="598.01611328125">
+         <font>
+            <Font size="47.0" />
+         </font>
+      </Text>
+      <Text fx:id="test_result" fill="RED" layoutX="321.0" layoutY="579.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="292.2060546875">
+          <font>
+              <Font size="21.0" />
+          </font>
+      </Text>
+   </children>
+</Pane>
